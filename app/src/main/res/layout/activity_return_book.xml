@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="50dp"
+    tools:context=".ReturnBook">
+    <TextView
+        android:id="@+id/viewText1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Return Book"
+        android:textSize="40dp"
+        android:layout_marginTop="70dp"
+        android:gravity="center"
+        android:textStyle="bold"
+        />
+    <TextView
+        android:id="@+id/viewText2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Enter Book Id:"
+        android:textSize="30dp"
+        android:layout_marginTop="70dp"
+        android:textStyle="bold"
+        android:layout_below="@+id/viewText1"
+        />
+
+    <EditText
+        android:id="@+id/editTextReturnBookId"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/viewText1"
+        android:layout_marginTop="66dp"
+        android:ems="3"
+        android:text="0"
+        android:layout_marginLeft="200dp"
+        android:inputType="number" />
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_below="@+id/editTextReturnBookId"
+        android:layout_marginTop="30dp"
+        android:background="#FFFFFF"
+        android:onClick="onReturnBook"
+        android:text="Return"
+        app:backgroundTint="#2196F3" />
+</RelativeLayout>

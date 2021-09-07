@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="50dp"
+    tools:context=".AddIssueBook">
+
+    <TextView
+        android:id="@+id/viewText1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Issue Book"
+        android:textSize="40dp"
+        android:layout_marginTop="70dp"
+        android:gravity="center"
+        android:textStyle="bold"
+        />
+    <TextView
+        android:id="@+id/viewText2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Book Id:"
+        android:textSize="30dp"
+        android:layout_marginTop="70dp"
+        android:textStyle="bold"
+        android:layout_below="@+id/viewText1"
+        />
+
+    <EditText
+        android:id="@+id/editTextIssueBookId"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/viewText1"
+        android:layout_marginTop="66dp"
+        android:ems="3"
+        android:layout_marginLeft="180dp"
+        android:inputType="number"
+        android:text="0"/>
+
+    <TextView
+        android:id="@+id/viewText3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Student Id:"
+        android:textSize="30dp"
+        android:layout_marginTop="30dp"
+        android:textStyle="bold"
+        android:layout_below="@+id/viewText2"
+        />
+
+    <EditText
+        android:id="@+id/editTextStudentId"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/editTextIssueBookId"
+        android:layout_marginTop="30dp"
+        android:ems="3"
+        android:layout_marginLeft="180dp"
+        android:inputType="number"
+        android:text="0"/>
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_below="@+id/viewText3"
+        android:layout_marginTop="40dp"
+        android:background="#FFFFFF"
+        android:onClick="onIssueBook"
+        android:text="Issue"
+        app:backgroundTint="#2196F3" />
+</RelativeLayout>

@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".DetailBook">
+
+
+
+
+<!--    -->
+    <TextView
+        android:id="@+id/viewText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Book Detail"
+        android:textSize="40dp"
+        android:layout_marginTop="70dp"
+        android:gravity="center"
+        android:textStyle="bold"
+        />
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Book Name:"
+        android:textSize="20dp"
+        android:layout_marginTop="50dp"
+        android:layout_marginLeft="5dp"
+        android:textStyle="bold"
+        android:layout_below="@+id/viewText"/>
+
+    <TextView
+        android:id="@+id/book_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="20dp"
+        android:layout_marginTop="50dp"
+        android:textStyle="bold"
+        android:layout_marginLeft="150dp"
+        android:layout_below="@+id/viewText"
+        />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Book Author:"
+        android:layout_marginLeft="5dp"
+        android:textSize="20dp"
+        android:layout_marginTop="20dp"
+        android:textStyle="bold"
+        android:layout_below="@+id/textView1"
+        />
+    <TextView
+        android:id="@+id/book_author"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="20dp"
+        android:layout_marginTop="20dp"
+        android:textStyle="bold"
+        android:layout_marginLeft="150dp"
+        android:layout_below="@+id/book_name" />
+
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Availability:"
+        android:layout_marginLeft="5dp"
+        android:textSize="20dp"
+        android:layout_marginTop="20dp"
+        android:textStyle="bold"
+        android:layout_below="@+id/textView2"
+        />
+    <TextView
+        android:id="@+id/book_availability"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="20dp"
+        android:layout_marginTop="20dp"
+        android:textStyle="bold"
+        android:layout_marginLeft="150dp"
+        android:layout_below="@+id/textView2" />
+
+    <TextView
+        android:id="@+id/textView5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Taken By:"
+        android:layout_marginLeft="5dp"
+        android:textSize="20dp"
+        android:layout_marginTop="20dp"
+        android:textStyle="bold"
+        android:layout_below="@+id/textView4"
+        />
+    <TextView
+        android:id="@+id/book_taken"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="20dp"
+        android:layout_marginTop="20dp"
+        android:textStyle="bold"
+        android:layout_marginLeft="150dp"
+        android:layout_below="@+id/textView4" />
+
+
+    <Button
+        android:id="@+id/update"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView5"
+        android:layout_marginLeft="70dp"
+        android:layout_marginTop="80dp"
+        android:text="Update"
+        app:backgroundTint="#ffc107"
+        android:onClick="onUpdate"/>
+
+    <Button
+        android:id="@+id/delete"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Delete"
+        android:layout_marginTop="80dp"
+        android:layout_marginLeft="240dp"
+        android:layout_below="@+id/textView5"
+        app:backgroundTint="#dc3545"
+        android:onClick="onDelete"/>
+
+
+</RelativeLayout>

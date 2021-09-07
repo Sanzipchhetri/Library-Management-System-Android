@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.kunja.librarymanagementsystem">
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.LibraryManagementSystem">
+        <activity android:name=".DeleteBook"></activity>
+        <activity android:name=".UpdateBook" />
+
+        <activity android:name=".DetailStudent"
+            android:parentActivityName=".Container">
+        </activity>
+
+        <activity android:name=".DetailBook"
+            android:parentActivityName=".Container">
+        </activity>
+
+        <activity android:name=".ViewStudent" />
+        <activity android:name=".ViewBook" />
+        <activity android:name=".AddIssueBook" />
+        <activity android:name=".ReturnBook" />
+        <activity android:name=".AddBook" />
+        <activity android:name=".AddStudent" />
+        <activity android:name=".Container" />
+        <activity android:name=".MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>
